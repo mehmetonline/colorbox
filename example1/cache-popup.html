@@ -46,7 +46,7 @@
 			// Set Cookie
 			function SetCookie(name,value,hours){
 				var expire = "";
-				expire = new Date((new Date()).getTime() + hours * 3600); //3600 minute
+				expire = new Date((new Date()).getTime() + hours * 36000); //36000 mminute
 				expire = "; expires=" + expire.toGMTString();
 				document.cookie = name + "=" + escape(value) + expire;
 				return true;
